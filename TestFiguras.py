@@ -18,7 +18,6 @@ class TestFiguras(unittest.TestCase):
         resultado = self.figura.cuadrado('g')
         self.assertEqual('Dato Incorrecto', resultado)
         
-        
     def test_area_cuadrado_lado_decimal(self):
         resultado = self.figura.cuadrado(4.5)
         self.assertEqual(20.25, resultado)
