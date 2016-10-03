@@ -1,14 +1,12 @@
-import math
-
 class Figuras:
-    
+
     def cuadrado(self, lado):
         try:
             lado = float(lado)
             return lado * lado
         except Exception, e:
-            return 'Dato Incorrecto'
-            
+            return e+'Dato Incorrecto'
+
     def rectangulo(self, ladoUno, ladoDos):
         try:
             ladoUno = float(ladoUno)
@@ -16,17 +14,17 @@ class Figuras:
             area = ladoUno * ladoDos
             return float("%.2f" % area)
         except Exception, e:
-            return'Datos Incorrectos'
-            
+            return e+'Datos Incorrectos'
+
     def triangulo(self, base, altura):
         try:
             base = float(base)
             altura = float(altura)
-            area = (base * altura)/2
+            area = (base * altura) / 2
             return float("%.2f" % area)
         except Exception, e:
-            return 'Datos Incorrectos'
-            
+            return e+'Datos Incorrectos'
+
     def circulo(self, radio):
         try:
             radio = float(radio)
@@ -34,7 +32,4 @@ class Figuras:
             area = pi * (radio**2)
             return float("%.2f" % area)
         except Exception, e:
-            return 'Dato Incorrecto'
-            
-            
-            
+            return e+'Dato Incorrecto'
