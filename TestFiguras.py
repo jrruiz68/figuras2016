@@ -1,5 +1,5 @@
 import unittest 
-from figuras import Figuras
+from Figuras import Figuras
 
 class TestFiguras(unittest.TestCase):
     
